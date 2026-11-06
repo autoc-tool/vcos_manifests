@@ -34,6 +34,7 @@
   <project name="vcos_components_system_services"   path="vcos/components/system_services" />
   <project name="vcos_components_system_services_service_management" path="vcos/components/system_services/service_management" />
   <project name="vcos_apps"                         path="vcos/apps" remote="autoc" revision="master" />
+  <project name="autoc_examples"                   path="vcos/examples" remote="autoc" revision="master" />
   <project name="vcos_build"                        path="vcos/build" remote="autoc" revision="master" />
   <project name="vcos_drivers"                      path="vcos/drivers" />
   <project name="vcos_studio"                       path="vcos/vcos_studio" remote="autoc" revision="master" />

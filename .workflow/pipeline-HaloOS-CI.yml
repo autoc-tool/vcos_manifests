@@ -1,0 +1,33 @@
+version: '1.0'
+name: pipeline-HaloOS-CI
+displayName: HaloOS-CI
+triggers:
+  trigger: manual
+  push:
+    branches:
+      prefix:
+        - develop
+      precise:
+        - master
+stages:
+  - name: stage-download-code
+    displayName: 代码下载及编译
+    strategy: naturally
+    trigger: auto
+    executor:
+      - chaobiao
+    steps:
+      - step: build@docker
+        name: build_docker
+        displayName: 镜像构建
+        type: cert
+        certificate: 7508ff30-9763-013e-0c8c-7288304a0235
+        tag: ${GITEE_PIPELINE_BUILD_NUMBER}
+        dockerfile: ./haloos_docker.dockerfile
+        context: ''
+        artifacts: []
+        isCache: false
+        parameter: {}
+        notify: []
+        strategy:
+          retry: '0'

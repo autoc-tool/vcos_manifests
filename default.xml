@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+  <notice>AutoC HaloOS/VCOS (autoc-tool) — PC MCAL as components/autoc_mcal</notice>
+  <!-- Unmodified HaloOS projects stay on Gitee; PC forks on GitHub autoc-tool. -->
+  <remote fetch="https://gitee.com/haloos/" name="haloos" />
+  <remote fetch="https://github.com/autoc-tool/" name="autoc" />
+  <default remote="haloos" revision="master" sync-j="8" />
+
+  <!-- haloos introduction repo -->
+  <project name="docs"                              path="docs" />
+  <!-- haloos common repos -->
+  <project name="apps_rt_demo"                      path="apps/rt_demo" />
+  <project name="apps_vbslite_demo"                 path="apps/vbslite_demo" />
+  <project name="apps_isolate_demo"                 path="apps/isolate_demo" />
+  <project name="apps_mempool_demo"                 path="apps/mempool_demo" />
+  <project name="build"                             path="build" />
+  <project name="tools_halo_trace"                  path="tools/halo_trace" />
+  <project name="tools_common"                      path="tools/common" />
+  <project name="tools_cicd"                        path="tools/cicd" />
+
+  <!-- vcos open project repos -->
+  <project name="vcos_components"                   path="vcos/components" />
+  <project name="vcos_components_runtime"           path="vcos/components/runtime" remote="autoc" revision="master" />
+  <project name="vcos_components_communication"     path="vcos/components/communication" remote="autoc" revision="master" />
+  <project name="vcos_components_configs"           path="vcos/components/configs" />
+  <project name="vcos_components_diagnostics"       path="vcos/components/diagnostics" />
+  <project name="vcos_components_fusa"              path="vcos/components/fusa" />
+  <project name="vcos_components_rt_framework"      path="vcos/components/rt_framework" remote="autoc" revision="master" />
+  <project name="vcos_components_maintaining"       path="vcos/components/maintaining" />
+  <project name="vcos_components_memory"            path="vcos/components/memory" remote="autoc" revision="master" />
+  <project name="vcos_components_include"           path="vcos/components/include" />
+  <project name="vcos_components_security"          path="vcos/components/security" />
+  <project name="vcos_components_system_services"   path="vcos/components/system_services" />
+  <project name="vcos_components_system_services_service_management" path="vcos/components/system_services/service_management" />
+  <project name="vcos_apps"                         path="vcos/apps" remote="autoc" revision="master" />
+  <project name="vcos_build"                        path="vcos/build" remote="autoc" revision="master" />
+  <project name="vcos_drivers"                      path="vcos/drivers" />
+  <project name="vcos_studio"                       path="vcos/vcos_studio" remote="autoc" revision="master" />
+  <project name="vcos_practice"                     path="vcos/vcos_practice" />
+  <project name="vcos_tests"                        path="vcos/tests" />
+  <project name="vcos_include"                      path="vcos/include" />
+  <project name="vcos_kernel_nuttx"                 path="vcos/kernel/nuttx" />
+  <project name="vcos_external"                     path="vcos/external" />
+  <project name="vcos_vendor_infineon"              path="vcos/vendor/infineon" />
+  <project name="vcos_vendor_semidrive"             path="vcos/vendor/semidrive" />
+  <project name="vcos_vendor_renesas"               path="vcos/vendor/renesas" />
+  <project name="vcos_vendor_nxp"                   path="vcos/vendor/nxp" />
+  <project name="vcos_vendor_flagchip"              path="vcos/vendor/flagchip" />
+  <project name="autoc_mcal"                        path="vcos/components/autoc_mcal" remote="autoc" revision="master" />
+  <project name="vcos"                              path="vcos/docs" />
+
+  <!-- vbs open project repos -->
+  <project name="vbslite_build"                     path="vbs/vbslite/build" />
+  <project name="vbslite_mvbs"                      path="vbs/vbslite/mvbs" />
+  <project name="vbslite_tools"                     path="vbs/vbslite/tools" />
+  <project name="vbslite_examples"                  path="vbs/vbslite/examples" />
+  <project name="vbs"                               path="vbs/docs" />
+
+  <!-- vbs vbspro open project repos -->
+  <project name="vbspro_build"                      path="vbs/vbspro/build" />
+  <project name="vbspro_examples"                   path="vbs/vbspro/examples" />
+  <project name="vbspro_framework"                  path="vbs/vbspro/framework" />
+  <project name="vbspro_dsf"                        path="vbs/vbspro/dsf" />
+  <project name="vbspro_dsf_src_unimem"             path="vbs/vbspro/dsf/src/unimem" />
+  <project name="vbspro_evbs"                       path="vbs/vbspro/evbs" />
+  <project name="vbspro_thirdparty"                 path="vbs/vbspro/thirdparty" />
+  <project name="vbspro_tools_daemon"               path="vbs/vbspro/tools/daemon" />
+  <project name="vbspro_tools_idlgen"               path="vbs/vbspro/tools/idlgen" />
+  <project name="vbspro_utils"                      path="vbs/vbspro/utils" />
+  <project name="vbspro_rpc"                        path="vbs/vbspro/rpc" />
+  <project name="vbspro_vbsauth"                    path="vbs/vbspro/vbsauth" />
+
+  <!-- ados open project repos -->
+  <project name="ados"                              path="ados/docs" />
+  <project name="ados_kernel"                       path="ados/kernel" />
+</manifest>
